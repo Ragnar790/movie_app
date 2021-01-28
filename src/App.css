@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(14, 14, 14);
+	background-color: #124494;
 }
 .App {
 	display: flex;
@@ -8,16 +8,19 @@ body {
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	width: max-content;
+	/* justify-content: end; */
+	/* background-color: #fff; */
 	/* flex-direction: column; */
 	/* padding: 10px; */
 	/* margin: 10px; */
 }
 .movie_card {
-	margin: 5px;
+	margin-top: 5px;
 	/* border: 2px solid rgba(0, 0, 0, 0.534); */
 	padding: 2px;
-	background-color: rgba(70, 66, 77, 0.76);
+	background-color: #3175e0;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	/* border-bottom-left-radius: 10px;

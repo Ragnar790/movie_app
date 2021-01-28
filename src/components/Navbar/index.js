@@ -2,6 +2,9 @@ import React from "react";
 import "./style.css";
 import Logo from "./navbar_logo.png";
 import Genre from "../Genre";
+import Button from "react-bootstrap/Button";
+
+// import "bootstrap/dist/css/bootstrap.css";
 
 const search_api =
 	"https://api.themoviedb.org/3/search/movie?api_key=58c9e30662728a9636cf251d1280f970&language=en-US&page=1&include_adult=false&query=";
@@ -63,6 +66,7 @@ function index({
 					setApi={setApi}
 					setPage={setPage}
 				/>
+				<Button variant="primary">Button</Button>
 
 				<form onSubmit={submitHandler}>
 					<input

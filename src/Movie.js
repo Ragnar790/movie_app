@@ -39,6 +39,9 @@ function Movie({ poster_path, title, rating, overview, year, genres }) {
 		});
 		return genreString;
 	}
+	const samp = () => {
+		console.log("samp ", poster_path, title, rating, overview, year, genres);
+	};
 	return (
 		<div>
 			<div className="img">
@@ -51,11 +54,17 @@ function Movie({ poster_path, title, rating, overview, year, genres }) {
 					}
 					alt="poster"
 				/>
+				{/* sample */}
+				{/* <button className="samp" onClick={samp}>
+					samp
+				</button> */}
 			</div>
 
 			<div className="card_details">
 				{/* TITLE */}
-				<div className="title">{title}</div>
+				<div className="title" id="scroll">
+					{title}
+				</div>
 				{/* <div className="title">{year}</div> */}
 				{/* RATING */}
 				<div className="rating">
@@ -63,7 +72,7 @@ function Movie({ poster_path, title, rating, overview, year, genres }) {
 					<div className={`rating_text ${setcolor(rating)}`}>{rating}</div>
 				</div>
 			</div>
-			<div className="overview">
+			<div className="overview" id="scroll">
 				<p>
 					<span>Relese Year: </span>
 					{year} <br />
