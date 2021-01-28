@@ -1,0 +1,70 @@
+.movie_card {
+	position: relative;
+	/* overflow-y: hidden; */
+}
+
+img {
+	width: 270px;
+	height: 350px;
+	object-fit: fill;
+}
+
+.title {
+	font-family: Hack, monospace;
+	font-weight: 500;
+	font-size: 20px;
+	overflow-x: hidden;
+	padding-top: 5px;
+	color: rgb(255, 255, 255);
+	width: 270px;
+	height: 25px;
+	text-align: center;
+}
+.rating_text {
+	font-family: Hack, monospace;
+	font-weight: 600;
+	padding: 0px 7px;
+	margin-left: auto;
+	margin-right: 10px;
+}
+.rating {
+	display: flex;
+	align-items: center;
+	padding: 5px 5px;
+}
+.overview {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 97px;
+	background-color: rgba(255, 255, 255, 0.76);
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-family: monospace;
+	font-size: larger;
+	padding: 20px;
+	margin: 2px;
+	max-height: 250px;
+	overflow-y: auto;
+	transform: translateY(500%);
+	transition: transform ease-in-out 0.3s;
+}
+.movie_card:hover .overview {
+	transform: translateY(0%);
+}
+.rating_text.green {
+	background-color: rgb(42, 255, 42);
+}
+.rating_text.orange {
+	background-color: rgb(255, 166, 0);
+}
+.rating_text.red {
+	background-color: red;
+}
+.overview p {
+	font-size: 25px;
+}
+.overview p .genres {
+	color: rgba(34, 4, 143, 0.932);
+	font-size: 15px;
+}

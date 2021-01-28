@@ -1,0 +1,22 @@
+.genre {
+	color: white;
+}
+.dropdown {
+	background-color: rgba(255, 255, 255, 0.596);
+	height: 28px;
+	padding: 2px;
+	border: none;
+	outline: none;
+	/* width: 200px; */
+	/* margin-left: 550px; */
+	border-radius: 1px;
+	font-family: Hack, monospace;
+	/* *** */
+	/* width: auto; */
+	cursor: pointer;
+}
+.options {
+	background-color: rgba(3, 45, 107, 0.712);
+	font-size: 20px;
+	font-family: Hack, monospace;
+}
